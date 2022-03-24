@@ -4,3 +4,5 @@ Get-Process
 Get-Process | Where-Object {$_.WorkingSet -gt 20000000}
 # Pronađite procese čiji naziv počinje sa slovom s.
 Get-Process -Name 'S*'
+# Pronađite proces koji predstavlja komandnu liniju koju ste pokrenuli.
+Get-Process CMD
